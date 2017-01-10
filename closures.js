@@ -14,6 +14,7 @@ square(3);//should return 9
 cube(3);//should return 27
 */
 
+<<<<<<< HEAD
 function pow(exponent){
  function base(base){
 	return Math.pow(base,exponent)
@@ -24,6 +25,8 @@ function pow(exponent){
 
 
 
+=======
+>>>>>>> 343fd57b9115bfa98f2276bd71d7649a0b7f81b4
 /*
 Problem 2:
 Write a function pingPongTracker that accepts no arguments and returns an object with the
@@ -42,6 +45,7 @@ myGame.playOneGame();//should return "Game played";
 myGame.playOneGame();//should return "Game played";
 myGame.timeSpentPlaying(); //should return 30;
 myGame.myLevel(); //should return "You need to improve your game"
+<<<<<<< HEAD
 */
 
 
@@ -76,3 +80,6 @@ var pingPongTracker=function(){
 }
 
 
+=======
+*/
+>>>>>>> 343fd57b9115bfa98f2276bd71d7649a0b7f81b4
