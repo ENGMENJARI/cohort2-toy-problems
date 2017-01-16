@@ -30,8 +30,8 @@
    */
  var Queue = function() {
    // Use two `stack` instances to implement your `queue` Class
-   this.inbox = new Stack();
-   this.outbox = new Stack();
+   var inbox = new Stack();
+   var outbox = new Stack();
 
    // called to add an item to the `queue`
    this.enqueue = function(value){
@@ -42,13 +42,13 @@
 
    // called to remove an item from the `queue`
    this.dequeue = function(){
-   var e=this.inbox.pop()
-   this.outbox.push(e)
+   
+   this.outbox.pop()
     }
 
    // should return the number of items in the queue
    this.size = function(){
-   	return this.inbox.length
+   	return this.inbox.size()
    };
 }
 
