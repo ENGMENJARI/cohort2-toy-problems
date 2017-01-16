@@ -12,6 +12,19 @@
   *
   */
 
-  var deepEquals = function(obj1, obj2){
-
-  }
+  var deepEquals = function (obj1,obj2){
+   var result=true
+   for (var key in obj1){
+      if (typeof obj1[key]==="object"){
+        result*=deepEquals(obj1[key],obj2[key])
+        return (result===1)
+      }
+       if(obj1[key] === obj2[key]){
+         result*=true
+       }
+       else{
+         return false
+       }
+     }
+     return (result===1);
+ }

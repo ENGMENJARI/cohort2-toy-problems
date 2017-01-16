@@ -21,6 +21,7 @@ Complete the functions in order to provide this functionality.
 */
 
 function Jar() {
+<<<<<<< HEAD
  this.j={}
  this.con=0
 }
@@ -48,6 +49,11 @@ Jar.prototype.getTotalAmount=function(){
 }
 return this.con
 }
+=======
+  // TODO
+}
+
+>>>>>>> ae4eb3ea71b7d7dbe78fe9f7d97772c1cd6928d1
 /*
 These are some tests:
 var jar = new Jar();
