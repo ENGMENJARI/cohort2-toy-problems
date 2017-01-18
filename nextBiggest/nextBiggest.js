@@ -35,6 +35,7 @@ rotate(data, 12478) // => [3, 4, 5, 1, 2]
 
 */
 function rotate(array, steps){
+<<<<<<< HEAD
 	var result=[]
 	if(steps===0 || steps===array.length){
 		return array
@@ -57,6 +58,10 @@ function rotate(array, steps){
 }
 return result
 }
+=======
+
+}
+>>>>>>> 858d22128908d635f902ddc6a58f47a633bf0238
 
 /*
 Problem 2 (Advanced)
@@ -76,6 +81,7 @@ nextBigger(531)==-1
 */
 
 function nextBigger(num){
+<<<<<<< HEAD
 	var d=num.toString()
   var a=d.split('')
   var l=a.length
@@ -100,3 +106,7 @@ function nextBigger(num){
   }
 
 }
+=======
+
+}
+>>>>>>> 858d22128908d635f902ddc6a58f47a633bf0238
