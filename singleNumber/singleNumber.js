@@ -14,14 +14,14 @@ arr = [2,4,3,6,8,2,3,4,8];
 singleNumber(arr);//should return 6 because it only appear once
 */
 function singleNumber(arr){
-	var single=0
+	
 	for(var i=0;i<arr.length;i++){
-		if(arr.splice(0,i-1).indexOf(arr[i])<0 && arr.splice(i+1,arr.length).indexOf(arr[i])<0){
-			single=arr[i]
-		}
+		if(arr.slice(0,i).indexOf(arr[i])<0 && arr.slice(i+1,arr.length).indexOf(arr[i])<0)
+			
+		return arr[i]
 		
 	}
-	return single
+	
 
 }
 
@@ -43,6 +43,7 @@ function twoSum(nums, target){
 	var f=nums[0];
 	var result=[];
 	for(var i=0;i<nums.length;i++){
+
 		if(f+nums[i]===target){
 			result.push(nums.indexOf(f),i)
 		}else{
