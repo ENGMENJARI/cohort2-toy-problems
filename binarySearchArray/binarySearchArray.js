@@ -18,18 +18,30 @@ var binarySearch = function (array, target) {
 	var f=0;
 	var l=array.length-1;
 	var middle=Math.floor((f+l)/2);
-	var index=array.indexOf(target)
+	
 	if(array[middle]===target){
-		return index
+		return middle
 	}
 	else if(array[middle]<target){
 
 		f=middle+1
+		for(var i=f;i<=l;i++){
+			if(array[i]===target){
+				return i
+			}
 			
+		}
 		}
 	else {
 		l=middle-1
+		for(var i=0;i<=l;i++){
+			if(array[i]===target){
+				return i
+			}
+			
+		}
+
 	}
-	return index
+	
 };
 
