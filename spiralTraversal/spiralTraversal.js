@@ -8,6 +8,7 @@
       [7,8,9]
     ]);
     returns [1, 2, 3, 6, 9, 8, 7, 4, 5]
+<<<<<<< HEAD
  *///this is simple solution for a 2-dimensional array (3*3) and the time complexity
 // is constant .
 // but for a matix(n*n) I think it may need 4 for loops (not nested) and the time 
@@ -24,3 +25,10 @@ return result
 
 
 
+=======
+ */
+
+var spiralTraversal = function(matrix){
+
+};
+>>>>>>> 812640f2ad169de84a70e736efcb0f6864aaf56e
