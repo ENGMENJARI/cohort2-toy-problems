@@ -27,6 +27,7 @@ dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]) => ["WEST
 dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH"]) => [] //don't need to move at all
 */
 
+<<<<<<< HEAD
 // var dirReduc = function(directions){
 //      var sum=0
 // 	for(var i=0;i<directions.length;i++){
@@ -113,3 +114,10 @@ var dirReduc = function(directions){
 };
 
 
+=======
+var dirReduc = function(directions){
+	
+	return directions;
+};
+
+>>>>>>> d2130e14cb0ab2ec81404accbb5aee359f2349a4
