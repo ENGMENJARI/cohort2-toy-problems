@@ -18,6 +18,11 @@ var largestProductOfThree = function(array) {
 	var m3=array.sort(function(a,b){return b-a})[2]
 	// finally return the product of these three numbers
 	//which is the largest possible product
+	if(array.sort(function(a,b){return b-a})[array.length-1]<0 && 
+		array.sort(function(a,b){return b-a})[array.length-2]<0){
+		m2=array.sort(function(a,b){return b-a})[array.length-2]
+	    m3=array.sort(function(a,b){return b-a})[array.length-1]
+	}
 	return m1*m2*m3
 };
 // the time complexity here is O(n)  Linear because sort() is
