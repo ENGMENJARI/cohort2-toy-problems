@@ -19,7 +19,11 @@ var largestProductOfThree = function(array) {
 	// finally return the product of these three numbers
 	//which is the largest possible product
 	if(array.sort(function(a,b){return b-a})[array.length-1]<0 && 
-		array.sort(function(a,b){return b-a})[array.length-2]<0){
+		array.sort(function(a,b){return b-a})[array.length-2]<0
+		& array.sort(function(a,b){return b-a})[array.length-1]*
+		array.sort(function(a,b){return b-a})[array.length-2]>
+		array.sort(function(a,b){return b-a})[1]*
+		array.sort(function(a,b){return b-a})[2]){
 		m2=array.sort(function(a,b){return b-a})[array.length-2]
 	    m3=array.sort(function(a,b){return b-a})[array.length-1]
 	}
