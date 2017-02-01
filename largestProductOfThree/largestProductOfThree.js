@@ -8,6 +8,7 @@
  */
 
 var largestProductOfThree = function(array) {
+<<<<<<< HEAD
 	//begin with sort the numbers from greates to minimum
 	// I used sort function after modify it.
 	var m1=array.sort(function(a,b){return b-a})[0]
@@ -32,6 +33,11 @@ var largestProductOfThree = function(array) {
 // the time complexity here is O(n)  Linear because sort() is
 // a built in function which iterate over all elements and then
 // it has Linear time complexity
+=======
+	
+};
+
+>>>>>>> 1fb158920ffe70da4fdfa3bb981fc802cd8c688a
 
 
 
