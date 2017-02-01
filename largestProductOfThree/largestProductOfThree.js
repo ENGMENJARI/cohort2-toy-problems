@@ -22,8 +22,8 @@ var largestProductOfThree = function(array) {
 		array.sort(function(a,b){return b-a})[array.length-2]<0
 		& array.sort(function(a,b){return b-a})[array.length-1]*
 		array.sort(function(a,b){return b-a})[array.length-2]>
-		array.sort(function(a,b){return b-a})[1]*
-		array.sort(function(a,b){return b-a})[2]){
+		array.sort(function(a,b){return b-a})[0]*
+		array.sort(function(a,b){return b-a})[1]){
 		m2=array.sort(function(a,b){return b-a})[array.length-2]
 	    m3=array.sort(function(a,b){return b-a})[array.length-1]
 	}
