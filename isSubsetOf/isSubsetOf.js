@@ -15,11 +15,16 @@
  *
  * See http://en.wikipedia.org/wiki/Subset for more on the definition of a
  * subset.
+<<<<<<< HEAD
  */
+=======
+*/
+>>>>>>> 489641d63aec9a4741e9d52eb49286a5629cb485
 
 
 /*
  * Extra credit: Make the method work for arrays that contain objects and/or arrays as elements.
+<<<<<<< HEAD
  */
 
  Array.prototype.isSubsetOf = function (arr) {
@@ -67,3 +72,10 @@
 
 
 
+=======
+*/
+
+Array.prototype.isSubsetOf = function (arr) {
+
+}
+>>>>>>> 489641d63aec9a4741e9d52eb49286a5629cb485
