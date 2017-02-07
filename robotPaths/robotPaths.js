@@ -39,6 +39,7 @@ var robotPaths = function(myBoard) {
   var myBoard = makeBoard(5);
   var paths=0;
   var findPaths=function(i,j){
+    //note: I search and read some solution to implement this
     if(i===4 && j===4){
       paths++
       return;
