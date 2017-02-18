@@ -26,6 +26,7 @@ var translateRomanNumeral = function(romanNumeral){
 	  D: 500,
 	  M: 1000
 	};
+<<<<<<< HEAD
 	
   var result = 0;
   // the result is now a number, not a string
@@ -44,3 +45,6 @@ var translateRomanNumeral = function(romanNumeral){
 }
 
 
+=======
+}
+>>>>>>> ec1197ded368e7aad2cc2c29d5059a3905f42645

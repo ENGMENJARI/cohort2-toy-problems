@@ -4,6 +4,7 @@
  * a prime number, false if it's not.
  */
 var primeTester = function(n) {
+<<<<<<< HEAD
 	
 	if(n===1){
 		return false
@@ -17,6 +18,9 @@ var primeTester = function(n) {
 		}
 		return true
 	}
+=======
+
+>>>>>>> ec1197ded368e7aad2cc2c29d5059a3905f42645
 }
 
  /* Extra credit: Write a function that generates a list of all prime numbers
@@ -24,6 +28,7 @@ var primeTester = function(n) {
   * check out the Sieve of Eratosthenes on Wikipedia. (And if you're feeling
   * saucy, check out the Sieve of Atkin.)
   */
+<<<<<<< HEAD
   var primeGenerator = function(n){
   	var primaries=[]
   	for(var i=2;i<=n;i++){
@@ -33,5 +38,7 @@ var primeTester = function(n) {
   }
   return primaries
 }
+=======
+>>>>>>> ec1197ded368e7aad2cc2c29d5059a3905f42645
 
   
