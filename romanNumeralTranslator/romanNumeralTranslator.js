@@ -26,33 +26,21 @@ var translateRomanNumeral = function(romanNumeral){
 	  D: 500,
 	  M: 1000
 	};
-	var number=0
-	for(var i=0; i<romanNumeral.length;i++){
-		if(romanNumeral[i]==='I'){
-			romanNumeral[i]===1
-		}else if(romanNumeral[i]==='V'){
-			romanNumeral[i]=5
-		}else if(romanNumeral[i]==='X'){
-			romanNumeral[i]===10
-		}else if(romanNumeral[i]==='L'){
-			romanNumeral[i]===50
-		}else if(romanNumeral[i]==='C'){
-			romanNumeral[i]===100
-		}else if(romanNumeral[i]==='D'){
-			romanNumeral[i]===500
-		}else if(romanNumeral[i]==='M'){
-			romanNumeral[i]===1000
-		}
-		number+=romanNumeral[i]
-		for(var key in DIGIT_VALUES){
-			if(key.toString()===romanNumeral[i] ){
-				return DIGIT_VALUES[key]*romanNumeral.length
-			}else if(romanNumeral[0]==='I' && romanNumeral[i]!=='I'){
-				var res=0
-				res+=DIGIT_VALUES[romanNumeral[i]]-1
-			}
-		}
-	}
-	return number
+	
+  var result = 0;
+  // the result is now a number, not a string
+  var decimal = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+  var roman = ["M", "CM","D","CD","C", "XC", "L", "XL", "X","IX","V","IV","I"];
+  for (var i = 0;i<=decimal.length;i++) {
+    while (romanNumeral.indexOf(roman[i]) === 0){
+    //checking for the first characters in the string
+      result += decimal[i];
+      //adding the decimal value to our result counter
+      romanNumeral = romanNumeral.replace(roman[i],'');
+      //remove the matched Roman letter from the beginning
+    }
+  }
+  return result;
 }
+
 
