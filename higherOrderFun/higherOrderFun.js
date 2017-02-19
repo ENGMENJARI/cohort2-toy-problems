@@ -78,7 +78,7 @@ Problem 3 (ADVANCED):
 
 What kind of candy do you like?
 Your answer: 
-// I like callback candy because it better than settimeout
+// I like beqlawa
 */
 
 
