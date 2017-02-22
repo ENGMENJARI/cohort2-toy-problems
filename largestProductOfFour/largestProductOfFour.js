@@ -38,6 +38,7 @@
 
 
 var largestProductOfFour = function(array) {
+<<<<<<< HEAD
 	var Product = 0;
 	var largest = 0;
 	
@@ -85,6 +86,10 @@ var largestProductOfFour = function(array) {
 
     }
 
+=======
+
+};
+>>>>>>> 75bd76e1dd515ba49edc28510f5b94573142c179
 
 
 
